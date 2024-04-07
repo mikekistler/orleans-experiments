@@ -4,7 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseOrleans(siloBuilder =>
 {
+    // Configures the silo to use development-only clustering and listen on localhost.
     siloBuilder.UseLocalhostClustering();
+    // Configure silo to use memory grain storage.
+    siloBuilder.AddMemoryGrainStorage("urls");
 });
 
 var app = builder.Build();
