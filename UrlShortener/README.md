@@ -8,5 +8,7 @@ https://learn.microsoft.com/training/modules/orleans-build-your-first-app/
 
 ```bash
 dotnet new web -o UrlShortener -f net8.0
+dotnet add package Microsoft.Orleans.Server -v '8.0.*'
+
 ```
 
