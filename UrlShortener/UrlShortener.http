@@ -1,0 +1,6 @@
+@OrleansURLShortener_HostAddress = http://localhost:5069
+
+GET {{OrleansURLShortener_HostAddress}}/shorten?url=http://www.microsoft.com
+Accept: application/json
+
+###
